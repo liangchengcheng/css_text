@@ -1,0 +1,22 @@
+列表类型
+要影响列表的样式，最简单（同时支持最充分）的办法就是改变其标志类型。
+例如，在一个无序列表中，列表项的标志 (marker) 是出现在各列表项旁边的圆点。在有序列表中，标志可能是字母、数字或另外某种计数体系中的一个符号。
+要修改用于列表项的标志类型，可以使用属性 list-style-type：
+ul {list-style-type : square}
+
+
+
+
+列表项图像
+有时，常规的标志是不够的。你可能想对各标志使用一个图像，这可以利用 list-style-image 属性做到：
+ul li {list-style-image : url(xxx.gif)}
+只需要简单地使用一个 url() 值，就可以使用图像作为标志。
+列表标志位置
+CSS2.1 可以确定标志出现在列表项内容之外还是内容内部。这是利用 list-style-position 完成的。
+简写列表样式
+为简单起见，可以将以上 3 个列表样式属性合并为一个方便的属性：list-style，就像这样：
+li {list-style : url(example.gif) square inside}
+
+
+
+

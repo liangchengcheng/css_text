@@ -1,0 +1,57 @@
+表格边框
+如需在 CSS 中设置表格边框，请使用 border 属性。
+下面的例子为 table、th 以及 td 设置了蓝色边框：
+table, th, td
+  {
+  border: 1px solid blue;
+  }
+
+
+
+
+
+
+请注意，上例中的表格具有双线条边框。这是由于 table、th 以及 td 元素都有独立的边框。
+如果需要把表格显示为单线条边框，请使用 border-collapse 属性。
+折叠边框
+border-collapse 属性设置是否将表格边框折叠为单一边框：
+table
+  {
+  border-collapse:collapse;
+  }
+
+table,th, td
+  {
+  border: 1px solid black;
+  }
+
+
+
+text-align 和 vertical-align 属性设置表格中文本的对齐方式。
+  text-align 属性设置水平对齐方式，比如左对齐、右对齐或者居中：
+  td
+    {
+    text-align:right;
+    }
+
+
+
+vertical-align 属性设置垂直对齐方式，比如顶部对齐、底部对齐或居中对齐：
+    td
+      {
+      height:50px;
+      vertical-align:bottom;
+      }
+
+
+
+属性	描述
+border-collapse	设置是否把表格边框合并为单一的边框。
+border-spacing	设置分隔单元格边框的距离。
+caption-side	设置表格标题的位置。
+empty-cells	设置是否显示表格中的空单元格。
+table-layout	设置显示单元、行和列的算法。
+
+
+empty-cells: hide;不显示没数据的
+caption-side:bottom：标题所在位置

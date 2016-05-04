@@ -1,0 +1,6 @@
+你希望列表中的 strong 元素变为斜体字，而不是通常的粗体字，可以这样定义一个派生选择器：
+li strong {
+    font-style: italic;
+    font-weight: normal;
+  }
+

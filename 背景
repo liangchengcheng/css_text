@@ -1,0 +1,41 @@
+可以使用 background-color 属性为元素设置背景色。这个属性接受任何合法的颜色值。
+这条规则把元素的背景设置为灰色：
+p {background-color: gray;}
+如果您希望背景色从元素中的文本向外少有延伸，只需增加一些内边距：
+p {background-color: gray; padding: 20px;}
+
+
+
+
+背景定位
+可以利用 background-position 属性改变图像在背景中的位置。
+下面的例子在 body 元素中将一个背景图像居中放置：
+body
+  {
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:center;
+  }
+
+
+
+
+百分数值
+百分数值的表现方式更为复杂。假设你希望用百分数值将图像在其元素中居中，这很容易：
+body
+  {
+    background-image:url('/i/eg_bg_03.gif');
+    background-repeat:no-repeat;
+    background-position:50% 50%;
+  }
+
+
+  背景关联
+  如果文档比较长，那么当文档向下滚动时，背景图像也会随之滚动。当文档滚动到超过图像的位置时，图像就会消失。
+  您可以通过 background-attachment 属性防止这种滚动。通过这个属性，可以声明图像相对于可视区是固定的（fixed），因此不会受到滚动的影响：
+  body
+    {
+    background-image:url(/i/eg_bg_02.gif);
+    background-repeat:no-repeat;
+    background-attachment:fixed
+    }
